@@ -17,7 +17,7 @@
 	<target name="set_properties_chrome" depends="set_timestamp">
     	<property name="scriptDir" value="D:/Sahi_pro/userdata/Login/"/>
     	<property name="scriptName" value="Login.sah"/>
-		<property name="browser" value="firefox"/>
+		<property name="browser" value="chrome"/>
 		<property name="sendemail" value="false"/>
 		<property name="emailtrigger" value="success,failure"/>
 		<property name="emailproperties" value="D:\Sahi_pro\userdata\config\email.properties"/>
@@ -52,8 +52,8 @@
 			singlesession="${singlesession}"
 			threads="${threads}">
 			<!-- Custom fields - add, edit or remove as required -->
-			<customfield key="UserName" value="dataqa@12twenty.com"/>
-			<customfield key="Password" value="wfcs923$23Wag"/>
+			<customfield key="UserName" value="${UserName}"/>
+			<customfield key="Password" value="${Password}"/>
 		</sahi>
 		<antcall target="failsahichrome"/>
 	</target>
