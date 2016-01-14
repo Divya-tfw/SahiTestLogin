@@ -1,0 +1,11 @@
+var $suiteInfo= _suiteInfo();
+$sUsername=$suiteInfo["UserName"];
+$sp=$suiteInfo["Password"];
+_log("$sUsername"+$sUsername);
+_log("Pwd:"+$sp);
+
+_navigateTo("http://law-texas.admin.data-12twenty.com");
+   //Enter Username
+	_setValue(_emailbox("Username"), $sUsername);
+_setValue(_password("Password"), $sp);
+_click(_link("Log in"));
